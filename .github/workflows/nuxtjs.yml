@@ -66,7 +66,7 @@ jobs:
         run: echo $'\nautoImport=true\nmodules[]=@nuxthq/studio' >> .nuxtrc
 
       - name: Generate
-        run: npx nuxi build --preset github_pages
+        run: NUXT_APP_BASE_URL=/test/ npx nuxi build --preset github_pages
 
       # Deployment job
       - name: Deploy 🚀
