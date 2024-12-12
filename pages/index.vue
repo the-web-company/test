@@ -8,7 +8,7 @@ let thewebcoClient: any = null;
 
 onMounted(() => (thewebcoClient = $thewebco()));
 
-const emails = ["shay@ynet.co.il", "gil-b@ynet.co.il", "dror-c@ynet.co.il"];
+const emails = ["shay@ynet.co.il", "gil-b@ynet.co.il", "dror-c@ynet.co.il", "asaf@ynet.co.il", "avi@yit.co.il", "iris-k@ynet.co.il", "sivan-f@ynet.co.il"];
 const check = () => {
   if (emails.includes(email.value)) {
     canEnter.value = true;
