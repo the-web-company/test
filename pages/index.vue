@@ -45,9 +45,9 @@ const check = async () => {
     <UCard v-if="!canEnter">
       <h2 class="text-xl mb-4">This is a test environment for some people, put in your email to check if your're worthy</h2>
 
-      <form class="flex gap-4 justify-center">
+      <form class="flex gap-4 justify-center" @submit.prevent="check">
         <UInput id="email" type="email" label="email" placeholder="email" v-model="email" class="w-1/2" />
-        <UButton label="Check" type="submit" @click="check" :loading="loading" />
+        <UButton label="Check" type="submit" :loading="loading" />
       </form>
     </UCard>
 
