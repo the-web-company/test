@@ -27,7 +27,7 @@ const check = () => {
       <h2 class="text-xl mb-4">This is a test environment for some people, put in your email to check if your're worthy</h2>
 
       <form class="flex gap-4 justify-center">
-        <UInput type="email" label="email" v-model="email" class="w-1/2" />
+        <UInput id="email" type="email" label="email" placeholder="email" v-model="email" class="w-1/2" />
         <UButton label="Check" type="submit" @click="check" />
       </form>
     </UCard>
