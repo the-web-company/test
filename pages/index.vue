@@ -17,7 +17,17 @@ onMounted(async () => {
   }
 });
 
-const emails = ["shay@ynet.co.il", "gil-b@ynet.co.il", "dror-c@ynet.co.il", "asaf@ynet.co.il", "avi@yit.co.il", "iris-k@ynet.co.il", "sivan-f@ynet.co.il"];
+const emails = [
+  "shay@ynet.co.il",
+  "gil-b@ynet.co.il",
+  "dror-c@ynet.co.il",
+  "asaf@ynet.co.il",
+  "avi@yit.co.il",
+  "iris-k@ynet.co.il",
+  "sivan-f@ynet.co.il",
+  "dolev-e@ynet.co.il",
+  "marina-b@ynet.co.il",
+];
 const check = async () => {
   loading.value = true;
   if (emails.includes(email.value.toLowerCase())) {
